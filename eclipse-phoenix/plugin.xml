@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.views">
+      <category
+            name="Phoenix"
+            id="Phoenix">
+      </category>
+      <view
+            name="Phoenix"
+            icon="icons/phoenix-icon.gif"
+            category="Phoenix"
+            class="com.anucana.phoenix.views.PhoenixView"
+            id="com.anucana.phoenix.views.PhoenixView">
+      </view>
+   </extension>
+   <extension
+         point="org.eclipse.ui.preferencePages">
+      <page
+            class="com.anucana.phoenix.preferences.PhoenixPreferencePage"
+            id="com.anucana.phoenix.preferences.PhoenixPreferencePage"
+            name="Phoenix">
+      </page>
+   </extension>
+   <extension
+         point="org.eclipse.core.runtime.preferences">
+      <initializer
+            class="com.anucana.phoenix.preferences.PreferenceInitializer">
+      </initializer>
+   </extension>
+
+</plugin>

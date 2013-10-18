@@ -1,0 +1,15 @@
+<aspectj>
+ <aspects>
+   <aspect name="com.anucana.phoenix.rt.aspects.CallTracer"/>
+ </aspects>
+ <weaver options="-verbose">
+ 	 <!-- Exclude all the vendor specific packages -->
+	 <exclude within="org.apache..*"/>
+	 <exclude within="org.jboss..*"/>
+ 	 <exclude within="com.ibm..*"/>
+  	 <exclude within="oracle..*"/>
+   	 <exclude within="com.arjuna..*"/>
+   	 <exclude within="sun..*"/>
+   	 <exclude within="org.eclipse..*"/>
+ </weaver>
+</aspectj>
